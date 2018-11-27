@@ -1,20 +1,13 @@
 <div>
-
     <div class="container">
-
         <div>
             <input [(ngModel)]="newTask">
             <button (click)="add()">Dodaj</button>
         </div>
-
     </div>
-
     <div class="container">
-
         <div>
-
             <ng-container *ngIf="taskList.length > 0; else noTask">
-
                 Lista zadań:
                 <ul>
                     <li *ngFor="let task of taskList">
@@ -28,7 +21,6 @@
                 <p>Brak zadań, możesz się zrelaksować</p>
             </ng-template>
         </div>
-
         <div>
             <p>Wykonane zadania: {{doneList.length}}</p>
             <ul>
@@ -37,7 +29,5 @@
                 </li>
             </ul>
         </div>
-
     </div>
-
 </div>
