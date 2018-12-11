@@ -1,14 +1,9 @@
-<h3>Lista zadań instruktora</h3>
-<div>
-    <div class="container">
-        <app-add-task></app-add-task>
-    </div>
-
-    <div class="container">
-
-        <app-todo-task></app-todo-task>
-
-        <app-done-task></app-done-task>
-    </div>
-
-</div>
+<ul class="nav nav-pills justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" routerLink="todoTask" routerLinkActive="active">Zadania</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="doneTask" routerLinkActive="active">Wykonane</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
